@@ -1,31 +1,30 @@
 
 <DOCTYPE html>
 <html>
-<head> <!-- anything in head you don’t see on the view -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="style.css" rel="stylesheet" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<header>
-	<title>Snake Game</title>
-	</header>
+	<head> 
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<header>
+		<title>Snake Game</title>
+		</header>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-default">
-		
-		<div class="row" id = "infoBar">
-			<div class="col-md-6" id="score">
-				<h3>Score</h3>
-			</div>
-			<div class="col-md-6" id="speed">
-				<h3>Speed</h3>
-			</div>
-		</div>
+			<span style="font-size:2.5em;" class="glyphicon glyphicon-globe"></span>
 		</nav>
+		<div class="row" id="gameInfo">
+			<div class="col-md-1"><h3>Score:</h3></div>
+			<div class="col-md-5" id="score"><h3>0</h3></div>
+
+			<div class="col-md-1"><h3>Speed:</h3></div>
+			<div class="col-md-5" id="speed"><h3>1</h3></div>
+		</div>
 		<div class="row">
-			<div class="col-md-12" id="gamefield">
-				<img src = "Capture.png" width = "400" height = "400" />
-			</div>
+
+			<div class="col-lg-1 col-md-offset-4" id="gameField"></div>
 		</div>
 	</body>
 </html>
