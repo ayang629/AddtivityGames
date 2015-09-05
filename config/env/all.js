@@ -15,8 +15,11 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+				'public/lib/slick-carousel/slick/slick.css',
+				'public/lib/slick-carousel/slick/slick-theme.css'
 			],
 			js: [
+				'public/lib/jquery/dist/jquery.js',
 				'public/lib/angular/angular.js',
 				'public/lib/angular-resource/angular-resource.js', 
 				'public/lib/angular-cookies/angular-cookies.js', 
@@ -25,7 +28,9 @@ module.exports = {
 				'public/lib/angular-sanitize/angular-sanitize.js', 
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/slick-carousel/slick/slick.js',
+				'public/lib/angular-slick/dist/slick.js'
 			]
 		},
 		css: [
