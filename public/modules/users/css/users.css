@@ -12,3 +12,16 @@
 	right: 10px;
 	position: absolute;
 }
+
+.head-bar{
+	background-color:#66CCFF;
+	color:white;
+	font-size:x-large;
+	padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+.bg-gray{
+	background-color: #D8D8D8; 
+}
