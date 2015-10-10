@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">&nbsp;</div>
 <section class="" data-ng-controller="AuthenticationController">
 	<div class="row">
@@ -79,4 +80,49 @@
 			</form>
 		</div>
 	</div>
+=======
+<section class="row" data-ng-controller="AuthenticationController">
+	<div class="row">
+		<div class="col-xs-12 col-md-12">&nbsp;</div>
+		<div class="container">
+			<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
+					<div class="row"><div class="form-group head-bar text-center col-xs-12 col-md-6 col-md-push-3">Sign Up</div></div>
+					<div class="row">
+						<div class="form-group col-xs-12 col-md-2 col-md-push-3">
+							<label for="firstName">First Name</label>
+							<input type="text" required id="firstName" name="firstName" class="form-control input-md" data-ng-model="credentials.firstName" placeholder="First Name">
+						</div>
+<!-- 						<div class="form-group col-xs-12 col-md-1 col-md-push-4">
+							<label for="firstName">M.I</label>
+							<input type="text" required id="middleInitial" name="middleInitial" class="form-control input-sm" data-ng-model="credentials.middleInitial" placeholder="M.I">
+						</div> -->
+						<div class="form-group col-xs-12 col-md-2 col-md-push-5">
+							<label for="lastName">Last Name</label>
+							<input type="text" id="lastName" name="lastName" class="form-control input-md" data-ng-model="credentials.lastName" placeholder="Last Name">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" class="form-control input-md" data-ng-model="credentials.email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="password">Confirm Password</label>
+						<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
+					</div>
+					<div class="text-center form-group">
+						<button type="submit" class="btn btn-large btn-primary">Sign up</button>&nbsp; or&nbsp;
+						<a href="/#!/signin" class="show-signup">Sign in</a>
+					</div>
+					<div data-ng-show="error" class="text-center text-danger">
+						<strong data-ng-bind="error"></strong>
+					</div>
+			</form>
+		</div>
+	</div>
+>>>>>>> 51d6c5baa9df9501f207398a63f45604fb224d0e
 </section>

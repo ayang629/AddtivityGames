@@ -1,33 +1,24 @@
-
+<!-- 
 
 <section class="row" data-ng-controller="HomeController">
 	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
 		<img alt="Addtivity Games" class="img-responsive text-center" src="modules/core/img/logo.jpg" />
 	</div>
-</section>
+</section> -->
 
-<section class="row">
-		<slick>
- 		<slick dots=true infinite=true speed=300 slides-to-show=3 slides-to-scroll=3> 
- 		<div>
-	 		<img src="modules/core/img/hao1.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao2.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao3.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao4.jpg" alt="">
- 		</div>
- 		<div>
-	 		<img src="modules/core/img/hao5.jpg" alt="">
- 		</div>
+<section class="row game_carousel" data-ng-controller="CarouselController">
+ 	<slick class="home_slick_slide" center-mode=true dots=falses infinite=true arrows=true speed=300 slides-to-show=3 slides-to-scroll=1 focus-on-select=true> 
+ 	    <span data-role="none" class="slick-prev" aria-label="previous">Previous</span>
+ 	    <div ng-repeat="image in imagePaths"> 
+ 	    	<a href="#">
+				<img class="game_thumbnail" ng-src="{{image}}"/>
+			</a>
+		</div>
+  	    <span data-role="none" class="slick-next" aria-label="next">Next</span>
  	</slick>
 </section>
 
-<section class="row" data-ng-controller="AuthenticationController">
+<!-- <section class="row" data-ng-controller="AuthenticationController">
 	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
 		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
 			<fieldset>
@@ -53,5 +44,5 @@
 		</form>
 	</div>
 </section>
-
+ -->
 
