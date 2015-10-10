@@ -35,22 +35,22 @@
     left: 10px;
     opacity: 1.5;
 }
-/*.game_thumbnail{
+.game_thumbnail{
     -moz-transition: all .4s ease;
     -ms-transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
     padding: 30px;
 
-}*/
-/*.game_thumbnail:hover{
+}
+.game_thumbnail:hover{
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     padding: 30px;
 
-}*/
+}
 body {
 	font-family: 'Roboto', sans-serif;
 }
