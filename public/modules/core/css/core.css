@@ -7,9 +7,47 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
 	display: none !important;
 }
+.game_carousel{
+    margin-top: 10%;
+}
 .ng-invalid.ng-dirty {
 	border-color: #FA787E;
 }
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+.home_slick_slide{
+	background-color: white;
+}
+.slick-prev {
+    left: 10px;
+    opacity: .8;
+}
+.slick-next {
+    right: 10px;
+    opacity: .8;
+}
+.slick-next:hover {
+    right: 10px;
+    opacity: 1.5;
+}
+.slick-prev:hover {
+    left: 10px;
+    opacity: 1.5;
+}
+/*.game_thumbnail{
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 30px;
+
+}*/
+/*.game_thumbnail:hover{
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    padding: 30px;
+
+}*/
