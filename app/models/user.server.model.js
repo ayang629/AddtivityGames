@@ -31,15 +31,15 @@ var UserSchema = new Schema({
 		default: '',
 		validate: [validateLocalStrategyProperty, 'Please fill in your first name']
 	},
+	middleInitial:{
+		type: String,
+		trim: true,
+	},
 	lastName: {
 		type: String,
 		trim: true,
 		default: '',
 		validate: [validateLocalStrategyProperty, 'Please fill in your last name']
-	},
-	displayName: {
-		type: String,
-		trim: true
 	},
 	email: {
 		type: String,
@@ -58,6 +58,19 @@ var UserSchema = new Schema({
 		type: String,
 		default: '',
 		validate: [validateLocalStrategyPassword, 'Password should be longer']
+	},
+	birthday:{
+		type: Date,
+		required: 'Please enter your birthday'
+	},
+	gradeLevel:{
+		type: Number,
+		min:1,
+		max:12,
+		required: 'Please enter your grade level'
+	},
+	games:{
+		type: [Schema.Types.ObjectId]
 	},
 	salt: {
 		type: String
