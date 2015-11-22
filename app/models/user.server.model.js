@@ -31,10 +31,6 @@ var UserSchema = new Schema({
 		default: '',
 		validate: [validateLocalStrategyProperty, 'Please fill in your first name']
 	},
-	middleInitial:{
-		type: String,
-		trim: true,
-	},
 	lastName: {
 		type: String,
 		trim: true,
@@ -45,7 +41,6 @@ var UserSchema = new Schema({
 		type: String,
 		trim: true,
 		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your email'],
 		match: [/.+\@.+\..+/, 'Please fill a valid email address']
 	},
 	username: {
@@ -70,7 +65,11 @@ var UserSchema = new Schema({
 		required: 'Please enter your grade level'
 	},
 	games:{
-		type: [Schema.Types.ObjectId]
+		type: [Schema.Types.ObjectId],
+		default: []
+	},	
+	gender: {
+		type: String
 	},
 	salt: {
 		type: String
