@@ -72,3 +72,36 @@ footer {
 	background-color: #71BFE2;
 	padding-top: 5px;
 }
+
+.slick-prev {
+    left: 10px;
+    opacity: .8;
+}
+.slick-next {
+    right: 10px;
+    opacity: .8;
+}
+.slick-next:hover {
+    right: 10px;
+    opacity: 1.5;
+}
+.slick-prev:hover {
+    left: 10px;
+    opacity: 1.5;
+}
+/*.game_thumbnail{
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 30px;
+
+}*/
+/*.game_thumbnail:hover{
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    padding: 30px;
+
+}*/
