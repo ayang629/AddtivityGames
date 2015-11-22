@@ -54,32 +54,39 @@
 
 	<footer class="footer">
 		<section class="container">
-			<div class="col-md-4">
-			<ul>
-				<li class="footer-header"><strong>COMPANY</strong></li>
-				<li>Home</li>
-				<li>Support</li>
-				<li>Inquiries</li>
-			</ul>
-			</div>
-			<div class="col-md-4">
-			<ul>
-				<li class="footer-header"><strong>COMMUNITY</strong></li>
-				<li>Safety Center</li>
-				<li>Community Guidelines</li>
-				<li>Parent Handbook</li>
-			</ul>
-			</div>
-			<div class="col-md-4">
-			<ul>
-				<li class="footer-header"><strong>LEGAL</strong></li>
-				<li>Terms of Use</li>
-				<li>Privacy Policy</li>
-				<li>Copyright</li>
-			</ul>
+			<div class="row">
+				<div class="col-md-4">
+					<ul>
+						<li class="footer-header"><strong>COMPANY</strong></li>
+						<li>Home</li>
+						<li>About Us</li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li class="footer-header"><strong>COMMUNITY</strong></li>
+						<li>Safety Center</li>
+						<li>Community Guidelines</li>
+						<li>Support</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li class="footer-header"><strong>LEGAL</strong></li>
+						<li>Terms of Use</li>
+						<li>Privacy Policy</li>
+						<li>Copyright</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</footer>
+	<section class="copyright">
+		<section class="container">
+			<p class="copyright"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Addtivity Games Inc.</p>
+		</section>		
+	</section>
 	<!--Embedding The User Object-->
 	<script type="text/javascript">
 		var user = {{ user | json | safe }};

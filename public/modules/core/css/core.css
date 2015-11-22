@@ -1,13 +1,13 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	font-color: white;
 }
 
 .nav-material {
 	background-color: #27A9E1;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	border-color: #ABDAF4;
-	border-bottom-width: 7px;
+	border-bottom: 7px solid #ABDAF4;
 	font-weight: bolder;
 	box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
 }
@@ -15,7 +15,7 @@ body {
 .nav a, .navbar-header a{
 	color: white;
 	font-size: 18px;
-	font-weight: semi-bold;
+	font-weight: lighter;
 }
 
 .navbar-header a {
@@ -41,15 +41,17 @@ body {
 
 footer {
 	margin-top: 20px;
+	background-image: url('/modules/core/img/footer_background.png');
 	background-color: #27A9E1;
-	padding-top: 60px;
+	padding-top: 45px;
 	padding-bottom: 20px;
-	border-top-width: 20px;
-	border-top-color: black;
+	border-top: 7px solid #ABDAF4;
 }
+
 
 .footer-header {
 	font-weight: bold;
+	color: yellow;
 }
 
 .footer ul {
@@ -61,4 +63,12 @@ footer {
 .footer ul li {
 		padding-bottom: 10px;
 		font-weight: lighter;
+}
+
+.copyright {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	background-color: #71BFE2;
+	padding-top: 5px;
 }
