@@ -19,6 +19,9 @@
 .home_slick_slide{
 	background-color: white;
 }
+.container{
+    width: 100%;
+}
 .slick-prev {
     left: 10px;
     opacity: .8;
