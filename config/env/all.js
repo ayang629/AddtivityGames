@@ -6,12 +6,20 @@ module.exports = {
 		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
 		keywords: 'MongoDB, Express, AngularJS, Node.js'
 	},
+<<<<<<< HEAD
 	port: process.env.PORT || 3000,
+=======
+	port: process.env.PORT || 3000, //port defined here
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	templateEngine: 'swig',
 	sessionSecret: 'MEAN',
 	sessionCollection: 'sessions',
 	assets: {
+<<<<<<< HEAD
 		lib: {
+=======
+		lib: { //add new external libraries here as well as putting them in the correct directory you list here (recommended public/lib)
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',

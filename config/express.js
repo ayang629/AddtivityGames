@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+<<<<<<< HEAD
 var fs = require('fs'),
 	http = require('http'),
 	https = require('https'),
@@ -22,6 +23,27 @@ var fs = require('fs'),
 	config = require('./config'),
 	consolidate = require('consolidate'),
 	path = require('path');
+=======
+var fs = require('fs'), //file system library for NodeJS
+	http = require('http'),
+	https = require('https'),
+	express = require('express'),
+	morgan = require('morgan'), //used for logging with express
+	bodyParser = require('body-parser'), //express middleware for parsing a body into req.body stuff
+	session = require('express-session'), //express middleware for creating, maintaining, and ending sessions
+	compress = require('compression'), //express middleware for compression
+	methodOverride = require('method-override'), //express middleware for overriding HTTP POST requests and other queries
+	cookieParser = require('cookie-parser'), // express middleware
+	helmet = require('helmet'), //express middleware for HTTP security
+	passport = require('passport'), //express middleware for authentication
+	mongoStore = require('connect-mongo')({ //express middleware to handle mongo sessions (whether to reuse mongo connecions and stuff like that)
+		session: session
+	}),
+	flash = require('connect-flash'), //express middleware for handling flash messages, must come after session-related requires
+	config = require('./config'), //so it can use the globbing functions created in config.js
+	consolidate = require('consolidate'), //wrapper for templates
+	path = require('path'); //path manipulation library for NodeJS
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 
 module.exports = function(db) {
 	// Initialize express app
@@ -29,18 +51,35 @@ module.exports = function(db) {
 
 	// Globbing model files
 	config.getGlobbedFiles('./app/models/**/*.js').forEach(function(modelPath) {
+<<<<<<< HEAD
 		require(path.resolve(modelPath));
 	});
 
 	// Setting application local variables
+=======
+		require(path.resolve(modelPath)); //require every model, calling resolve to ensure paths are absolute
+	});
+
+	// Setting application local variables. 
+	//All of the config.app variables are available because we get them from config.js when we called extend with the ENV files
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	app.locals.title = config.app.title;
 	app.locals.description = config.app.description;
 	app.locals.keywords = config.app.keywords;
 	app.locals.facebookAppId = config.facebook.clientID;
+<<<<<<< HEAD
 	app.locals.jsFiles = config.getJavaScriptAssets();
 	app.locals.cssFiles = config.getCSSAssets();
 
 	// Passing the request url to environment locals
+=======
+	app.locals.jsFiles = config.getJavaScriptAssets(); //see config.js for glob function
+	app.locals.cssFiles = config.getCSSAssets(); //see config.js for glob function
+
+	// Passing the request url to environment locals
+	// protocol and headers.host are express values given to the req arg. (name of req depends on how user names param)
+	//This part basically tells us to use localhost://3000 (or whatever port we define in all.js)
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	app.use(function(req, res, next) {
 		res.locals.url = req.protocol + '://' + req.headers.host + req.url;
 		next();

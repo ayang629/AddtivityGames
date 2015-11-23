@@ -1,10 +1,19 @@
 'use strict';
+<<<<<<< HEAD
 
 /**
  * Module dependencies.
  */
 var glob = require('glob'),
 	chalk = require('chalk');
+=======
+//This module exists so we can configure the correct environments (all environment configs are in the env folder)
+/**
+ * Module dependencies.
+ */
+var glob = require('glob'), //used as a regex matcher to find the correct environment file in the env folder
+	chalk = require('chalk'); //just an npm css dependency.
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 
 /**
  * Module init function.
