@@ -15,14 +15,21 @@ var _ = require('lodash'),
 exports.signup = function(req, res) {
 	// For security measurement we remove the roles from the req.body object
 	delete req.body.roles;
-
 	// Init Variables
-	var user = new User(req.body);
+	var user = new User({
+		firstName: req.body.firstName,
+		lastName: req.body.lastName,
+		username: req.body.username,
+		password: req.body.password,
+		birthday: req.body.birthday,
+		gradeLevel: req.body.gradeLevel,
+		gender: req.body.gender,
+		email: req.body.email
+	});
 	var message = null;
 
 	// Add missing user fields
 	user.provider = 'local';
-	user.displayName = user.firstName + ' ' + user.lastName;
 
 	// Then save the user 
 	user.save(function(err) {

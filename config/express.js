@@ -66,6 +66,7 @@ module.exports = function(db) {
 	app.locals.title = config.app.title;
 	app.locals.description = config.app.description;
 	app.locals.keywords = config.app.keywords;
+<<<<<<< HEAD
 	app.locals.facebookAppId = config.facebook.clientID;
 <<<<<<< HEAD
 	app.locals.jsFiles = config.getJavaScriptAssets();
@@ -73,6 +74,9 @@ module.exports = function(db) {
 
 	// Passing the request url to environment locals
 =======
+=======
+	app.locals.facebookAppId = config.facebook.clientID; 
+>>>>>>> d89c208e0b481b97f8ebaa938a2bed6ea6bdb47b
 	app.locals.jsFiles = config.getJavaScriptAssets(); //see config.js for glob function
 	app.locals.cssFiles = config.getCSSAssets(); //see config.js for glob function
 

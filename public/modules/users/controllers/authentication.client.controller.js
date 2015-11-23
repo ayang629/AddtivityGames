@@ -8,6 +8,12 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 		if ($scope.authentication.user) $location.path('/');
 
 		$scope.signup = function() {
+			$scope.credentials.birthday = new Date($scope.credentials.year, $scope.credentials.month, $scope.credentials.day);
+			if($scope.credentials.onOff){
+				$scope.credentials.gender = 'female';
+			}else{
+				$scope.credentials.gender = 'male';
+			}
 			$http.post('/auth/signup', $scope.credentials).success(function(response) {
 				// If successful we assign the response to the global user model
 				$scope.authentication.user = response;
