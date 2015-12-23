@@ -15,7 +15,6 @@ var _ = require('lodash'),
 exports.signup = function(req, res) {
 	// For security measurement we remove the roles from the req.body object
 	delete req.body.roles;
-
 	// Init Variables
 	var user = new User({
 		firstName: req.body.firstName,
@@ -31,7 +30,6 @@ exports.signup = function(req, res) {
 
 	// Add missing user fields
 	user.provider = 'local';
-	user.displayName = user.firstName + ' ' + user.lastName;
 
 	// Then save the user 
 	user.save(function(err) {

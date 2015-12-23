@@ -1,4 +1,5 @@
 'use strict';
+
 //This module has some useful globbing functions that we'll use later
 /**
  * Module dependencies.
@@ -9,6 +10,7 @@ var _ = require('lodash'), //think of loadash as an awesome toolbelt that has a 
 /**
  * Load app configurations
  */
+
 module.exports = _.extend(   //call to extend adds to the /env/process.env.NODE_ENV.js document everything in /env/all.js but does not replace shared object attributes
 	require('./env/all'),
 	require('./env/' + process.env.NODE_ENV) || {}
@@ -17,6 +19,7 @@ module.exports = _.extend(   //call to extend adds to the /env/process.env.NODE_
 /**
  * Get files by glob patterns
  */
+
 module.exports.getGlobbedFiles = function(globPatterns, removeRoot) { //function that outputs an array output of unique files that match the urlRegex form (ie: valid url path format)
 	// For context switching
 	var _this = this;

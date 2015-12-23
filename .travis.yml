@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - "0.10"
 env:
+<<<<<<< HEAD
+  - NODE_ENV=travis
+=======
   - NODE_ENV=development
+>>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 services:
   - mongodb

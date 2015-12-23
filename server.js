@@ -2,6 +2,7 @@
 /**
  * Module dependencies.
  */
+
 var init = require('./config/init')(),   //in config folder, sets the correct environment (e.g: production, development, etc...)
 	config = require('./config/config'), //in config folder
 	mongoose = require('mongoose'),
@@ -13,6 +14,7 @@ var init = require('./config/init')(),   //in config folder, sets the correct en
  */
 
 // Bootstrap db connection
+
 var db = mongoose.connect(config.db, function(err) {  //config.db exists in whichever NODE_ENV file got extended with all.js in env/
 	if (err) {
 		console.error(chalk.red('Could not connect to MongoDB!'));
@@ -21,7 +23,9 @@ var db = mongoose.connect(config.db, function(err) {  //config.db exists in whic
 });
 
 // Init the express application
+
 var app = require('./config/express')(db); //db argument into main modules.export in express.js file
+
 
 // Bootstrap passport config
 require('./config/passport')();
