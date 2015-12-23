@@ -58,13 +58,13 @@ var UserSchema = new Schema({
 		type: Date,
 		required: 'Please enter your birthday'
 	},
-	gradeLevel:{
+	gradeLevel: {
 		type: Number,
 		min:1,
 		max:12,
 		required: 'Please enter your grade level'
 	},
-	games:{
+	games: {
 		type: [Schema.Types.ObjectId],
 		default: []
 	},	
