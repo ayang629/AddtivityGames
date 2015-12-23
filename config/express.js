@@ -3,27 +3,6 @@
 /**
  * Module dependencies.
  */
-<<<<<<< HEAD
-var fs = require('fs'),
-	http = require('http'),
-	https = require('https'),
-	express = require('express'),
-	morgan = require('morgan'),
-	bodyParser = require('body-parser'),
-	session = require('express-session'),
-	compress = require('compression'),
-	methodOverride = require('method-override'),
-	cookieParser = require('cookie-parser'),
-	helmet = require('helmet'),
-	passport = require('passport'),
-	mongoStore = require('connect-mongo')({
-		session: session
-	}),
-	flash = require('connect-flash'),
-	config = require('./config'),
-	consolidate = require('consolidate'),
-	path = require('path');
-=======
 var fs = require('fs'), //file system library for NodeJS
 	http = require('http'),
 	https = require('https'),
@@ -43,7 +22,6 @@ var fs = require('fs'), //file system library for NodeJS
 	config = require('./config'), //so it can use the globbing functions created in config.js
 	consolidate = require('consolidate'), //wrapper for templates
 	path = require('path'); //path manipulation library for NodeJS
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 
 module.exports = function(db) {
 	// Initialize express app
@@ -51,39 +29,21 @@ module.exports = function(db) {
 
 	// Globbing model files
 	config.getGlobbedFiles('./app/models/**/*.js').forEach(function(modelPath) {
-<<<<<<< HEAD
-		require(path.resolve(modelPath));
-	});
-
-	// Setting application local variables
-=======
 		require(path.resolve(modelPath)); //require every model, calling resolve to ensure paths are absolute
 	});
 
 	// Setting application local variables. 
 	//All of the config.app variables are available because we get them from config.js when we called extend with the ENV files
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	app.locals.title = config.app.title;
 	app.locals.description = config.app.description;
 	app.locals.keywords = config.app.keywords;
-<<<<<<< HEAD
-	app.locals.facebookAppId = config.facebook.clientID;
-<<<<<<< HEAD
-	app.locals.jsFiles = config.getJavaScriptAssets();
-	app.locals.cssFiles = config.getCSSAssets();
-
-	// Passing the request url to environment locals
-=======
-=======
 	app.locals.facebookAppId = config.facebook.clientID; 
->>>>>>> d89c208e0b481b97f8ebaa938a2bed6ea6bdb47b
 	app.locals.jsFiles = config.getJavaScriptAssets(); //see config.js for glob function
 	app.locals.cssFiles = config.getCSSAssets(); //see config.js for glob function
 
 	// Passing the request url to environment locals
 	// protocol and headers.host are express values given to the req arg. (name of req depends on how user names param)
 	//This part basically tells us to use localhost://3000 (or whatever port we define in all.js)
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	app.use(function(req, res, next) {
 		res.locals.url = req.protocol + '://' + req.headers.host + req.url;
 		next();

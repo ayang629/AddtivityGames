@@ -1,11 +1,7 @@
 'use strict';
 
 module.exports = {
-<<<<<<< HEAD
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/vision-bots',
-=======
 	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://admin:password@ds061767.mongolab.com:61767/apollocade_prod',
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
 	assets: {
 		lib: {
 			css: [
