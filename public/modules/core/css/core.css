@@ -1,5 +1,30 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-color: white;
+}
+
+.nav-material {
+	background-color: #27A9E1;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-bottom: 7px solid #ABDAF4;
+	font-weight: bolder;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,.12),0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+.nav a, .navbar-header a{
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.navbar-header a {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
 .content {
-	margin-top: 50px;
+	margin-top: 23vh;
 }
 .undecorated-link:hover {
 	text-decoration: none;
@@ -13,3 +38,70 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+
+footer {
+	margin-top: 20px;
+	background-image: url('/modules/core/img/footer_background.png');
+	background-color: #27A9E1;
+	padding-top: 45px;
+	padding-bottom: 20px;
+	border-top: 7px solid #ABDAF4;
+}
+
+
+.footer-header {
+	font-weight: bold;
+	color: yellow;
+}
+
+.footer ul {
+	list-style-type: none;
+	color: white;
+	text-align: center;
+}
+
+.footer ul li {
+		padding-bottom: 10px;
+		font-weight: lighter;
+}
+
+.copyright {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	background-color: #71BFE2;
+	padding-top: 5px;
+}
+
+.slick-prev {
+    left: 10px;
+    opacity: .8;
+}
+.slick-next {
+    right: 10px;
+    opacity: .8;
+}
+.slick-next:hover {
+    right: 10px;
+    opacity: 1.5;
+}
+.slick-prev:hover {
+    left: 10px;
+    opacity: 1.5;
+}
+/*.game_thumbnail{
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 30px;
+
+}*/
+/*.game_thumbnail:hover{
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    padding: 30px;
+
+}*/

@@ -13,9 +13,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 			templateUrl: 'modules/core/views/home.client.view.html'
 		});
 	}
-<<<<<<< HEAD
-]);
-=======
 ]);
 
 // angular.module('users').config(['$stateProvider',
@@ -60,4 +57,3 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 // 		});
 // 	}
 // ]);
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7

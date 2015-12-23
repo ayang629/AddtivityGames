@@ -1,104 +1,24 @@
-<<<<<<< HEAD
-<section data-ng-controller="HomeController">
-	<div class="jumbotron text-center">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-				<img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/img/brand/logo.png" />
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<p class="lead">
-				Open-Source Full-Stack Solution For MEAN Applications
-			</p>
-		</div>
-		<div class="row">
-			<p>
-				<a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>
-			</p>
-		</div>
-	</div>
-	<div>
-		<h2>Congrats! You've configured and run the sample application.</h2>
-		<p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>
-		<p>This sample application tracks users and articles.</p>
-		<ul>
-			<li>
-				Click
-				<em>Signup</em>
-				to get started.
-			</li>
-			<li>
-				Configure your app to work with your social accounts, by editing the
-				<em>/config/env/*.js</em>
-				files.
-			</li>
-			<li>
-				Edit your users module.
-			</li>
-			<li>
-				Add new CRUD modules.
-			</li>
-			<li>
-				Have fun...
-			</li>
-		</ul>
-	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<h2>
-				<strong>M</strong>ongoDB
-			</h2>
-			<p><a target="_blank" href="http://mongodb.org/">MongoDB</a> is a database. MongoDB's <a target="_blank" href="http://docs.mongodb.org/manual/">great manual</a> is the place to get started with NoSQL and MongoDB.</p>
-		</div>
-		<div class="col-md-3">
-			<h2>
-				<strong>E</strong>xpress
-			</h2>
-			<p><a target="_blank" href="http://expressjs.com/"> Express</a> is an app server. Check out <a target="_blank" href="http://expressjs.com/guide.html">The Express Guide</a> or <a target="_blank" href="http://stackoverflow.com/questions/8144214/learning-express-for-node-js">StackOverflow</a> for more info.</p>
-		</div>
-		<div class="col-md-3">
-			<h2>
-				<strong>A</strong>ngularJS
-			</h2>
-			<p>AngularJS is web app framework. <a target="_blank" href="http://angularjs.org/">Angular's website</a> offers a lot. The <a target="_blank" href="http://www.thinkster.io/">Thinkster Popular Guide</a> and <a target="_blank" href="https://egghead.io/">Egghead Videos</a> are great resources.</p>
-		</div>
-		<div class="col-md-3">
-			<h2>
-				<strong>N</strong>ode.js
-			</h2>
-			<p><a target="_blank" href="http://nodejs.org/">Node.js</a> is a web server. Node's website and this <a target="_blank" href="http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js">stackOverflow thread</a> offer excellent starting points to get to grasps with node.</p>
-=======
-
+<!-- 
 
 <section class="row" data-ng-controller="HomeController">
 	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
 		<img alt="Addtivity Games" class="img-responsive text-center" src="modules/core/img/logo.jpg" />
 	</div>
-</section>
+</section> -->
 
-<section class="row">
-		<slick>
- 		<slick dots=true infinite=true speed=300 slides-to-show=3 slides-to-scroll=3> 
- 		<div>
-	 		<img src="modules/core/img/hao1.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao2.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao3.jpg" alt="">
-	 	</div>
-	 	<div>
-	 		<img src="modules/core/img/hao4.jpg" alt="">
- 		</div>
- 		<div>
-	 		<img src="modules/core/img/hao5.jpg" alt="">
- 		</div>
+<section class="row game_carousel" data-ng-controller="CarouselController">
+ 	<slick class="home_slick_slide" center-mode=true dots=falses infinite=true arrows=true speed=300 slides-to-show=3 slides-to-scroll=1 focus-on-select=true> 
+ 	    <span data-role="none" class="slick-prev" aria-label="previous">Previous</span>
+ 	    <div ng-repeat="image in imagePaths"> 
+ 	    	<a href="#">
+				<img class="game_thumbnail" ng-src="{{image}}" ng-style="resizeThumbnail"  ng-mouseover="resizeImages(image,true)" ng-mouseleave="resizeImages(image,false)"/>
+			</a>
+		</div>
+  	    <span data-role="none" class="slick-next" aria-label="next">Next</span>
  	</slick>
 </section>
 
-<section class="row" data-ng-controller="AuthenticationController">
+<!-- <section class="row" data-ng-controller="AuthenticationController">
 	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
 		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
 			<fieldset>
@@ -124,54 +44,5 @@
 		</form>
 	</div>
 </section>
-<<<<<<< HEAD
-<!-- <section data-ng-controller="HomeController">
- 
-<div class="jumbotron text-center">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">xw
-				<img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/img/brand/logo.png" />
-			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-				<img alt="Sexy Man" class="img-responsive text-center" src="modules/core/img/brand/sexyhao.jpg" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-				<h1>A VERY SEXY MAN</h1>
-			</div>
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
-		</div>
-	</div>
-	<div class="well">
-		<h2>MEAN.JS Documentation</h2>
-		<p>
-			Once you're familiar with the foundation technology, check out the MEAN.JS Documentation:
-			<ul>
-				<li><a target="_blank" href="http://meanjs.org/docs.html">MEAN.JS Documentation</a>
-				</li>
-				<li><a target="_blank" href="http://meanjs.org/generator.html">Yeoman Generator</a>
-				</li>
-				<li><a target="_blank" href="http://meanjs.org/modules.html">Modules</a>
-				</li>
-				<li><a target="_blank" href="http://meanjs.org/changelog.html">Changelog</a>
-				</li>
-				<li><a target="_blank" href="http://meanjs.org/community.html">Community</a>
-				</li>
-				<li><a target="_blank" href="http://blog.meanjs.org">Blog</a>
-				</li>
-			</ul>
-		</p>
-	</div>
-	<br>Enjoy &amp; Keep Us Updated,
-<<<<<<< HEAD
-	<br>The MEAN.JS Team.
-</section>
-=======
-	<br>The MEAN.JS Team. 
-</section> -->
-</section>
->>>>>>> 59c6c424a2c0ed1cee3b4818ffbc3d19bbce45c7
-=======
+ -->
 
-
->>>>>>> d89c208e0b481b97f8ebaa938a2bed6ea6bdb47b
