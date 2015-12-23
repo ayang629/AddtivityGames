@@ -3,6 +3,18 @@
 		position: fixed;
 	}
 }
+
+.container{
+	width:75%;
+}
+
+label{
+	font-size:150%;
+}
+.pad-bar{
+	padding: 25px 10px 25px 10px;
+}
+
 .remove-account-container {
 	display: inline-block;
 	position: relative;
@@ -11,4 +23,24 @@
 	top: 10px;
 	right: 10px;
 	position: absolute;
+}
+
+.head-bar{
+	background-color:#9DFBA5;
+	color:white;
+	font-size: 250%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 10px 25px 10px 25px;
+	border-radius:25px;
+}
+
+.bg-gray{
+	background-color: #F0F0F0 ; 
+}
+
+.center-label{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: 150%;
 }
