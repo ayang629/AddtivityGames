@@ -7,7 +7,6 @@ var init = require('./config/init')(),   //in config folder, sets the correct en
 	config = require('./config/config'), //in config folder
 	mongoose = require('mongoose'),
 	chalk = require('chalk'); //chalk is just a command line css display
-
 /**
  * Main application entry file.
  * Please note that the order of loading is important.

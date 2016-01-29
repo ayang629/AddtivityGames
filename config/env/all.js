@@ -32,7 +32,8 @@ module.exports = {
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 				'public/lib/slick-carousel/slick/slick.js',
 				'public/lib/angular-slick/dist/slick.js',
-				'public/lib/angular-ui-switch/angular-ui-switch.js'
+				'public/lib/angular-ui-switch/angular-ui-switch.js',
+				'public/lib/phaser/build/phaser.js'
 			]
 		},
 		css: [
