@@ -1,15 +1,16 @@
 'use strict';
 
-angular.module('core').controller('SpaceGameController', function($scope){
-	$scope.game = new Phaser.Game(800, 600, Phaser.AUTO, '', { 
+angular.module('articles').controller('SpaceGameController', function($scope){
+
+	$scope.game = new Phaser.Game(907.5, 600, Phaser.AUTO, 'SpaceGame', { 
 		preload: preload, 
 		create: create,
 		update: update
 	});
 
 	function preload() {
-		$scope.game.load.image('volcano', '/modules/core/img/volcanoBG.jpg');
-		$scope.game.load.spritesheet('hao', '/modules/core/img/dude.png', 75, 96, 10);
+		$scope.game.load.image('volcano', '/modules/articles/img/volcanoBG.jpg');
+		$scope.game.load.spritesheet('hao', '/modules/articles/img/dude.png', 75, 96, 10);
 
 	}
 	
@@ -29,8 +30,6 @@ angular.module('core').controller('SpaceGameController', function($scope){
 	    $scope.player.animations.add('left', [0, 1, 2, 3], 10, true);
 	    $scope.player.animations.add('right', [5, 6, 7, 8], 10, true);
 	    $scope.player.animations.add('up', [4], 10, true);
-
-
 	}
 
 	function update(){
